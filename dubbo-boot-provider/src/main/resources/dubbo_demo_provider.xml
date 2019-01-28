@@ -16,7 +16,7 @@
     <!--声明需要暴露的服务接口-->
     <dubbo:service interface="com.dubbo.demo.DemoService" ref="demoService" />
     <!--bean实现-->
-    <bean id="demoService" class="com.dubbo.demo.provider.DemoServiceImpl"/>
+    <bean id="demoService" class="com.provider.DemoServiceImpl"/>
     <!--监控配，表示从注册中心动态发现注册中心地址-->
     <dubbo:monitor protocol="registry"/>
     <!--直连注册中心-->

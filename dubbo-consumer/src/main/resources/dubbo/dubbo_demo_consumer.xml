@@ -13,4 +13,8 @@
     <dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" />
     <!--生成远程服务代理，可以和本地bean一样使用-->
     <dubbo:reference id="demoService" interface="com.dubbo.demo.DemoService" />
+    <!--监控配，表示从注册中心动态发现注册中心地址-->
+    <dubbo:monitor protocol="registry"/>
+    <!--直连注册中心-->
+    <!--<dubbo:monitor address="127.0.0.1:2181" />-->
 </beans>
